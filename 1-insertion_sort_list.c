@@ -1,7 +1,7 @@
-"sort.h"
+#include "sort.h"
 /**
- * create_listint - Creates a doubly linked list from an array of integers
- * 
+ * insertion_sort_list - function that sorts a doubly linked list
+ * of integers in ascending order using the Insertion sort algorithm
  * @list: Dobule linked list to sort
  */
 void insertion_sort_list(listint_t **list)
@@ -25,7 +25,7 @@ void insertion_sort_list(listint_t **list)
  *swap_node - swap a node for his previous one
  *@node: node
  *@list: node list
- *Return: Pointer to the first element of the created list. NULL on failure
+ *Return: return a pointer to a node which was enter it
  */
 listint_t *swap_node(listint_t *node, listint_t **list)
 {
